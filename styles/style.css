@@ -14,12 +14,14 @@ body {
 }
 header {
   /* background-color: gray; */
+  color: white;
   position: fixed;
   z-index: 10;
   top: 10px;
   left: 10px;
 }
-.main-nav {
+.main-nav,
+.logo {
   display: none;
 }
 .burger-menu-btn {
@@ -76,4 +78,32 @@ h1 {
 }
 .hero-text a {
   text-decoration: underline;
+}
+
+/* MEDIAS__________________ */
+@media screen and (min-width: 768px) {
+  .main-nav,
+  .logo {
+    display: block;
+  }
+  .burger-menu-btn {
+    display: none;
+  }
+  header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    padding: 28px 35px;
+  }
+  .nav-list {
+    display: flex;
+    align-items: center;
+  }
+  .nav-link {
+    padding: 0.5em 1em;
+    font-size: 18px;
+  }
 }
