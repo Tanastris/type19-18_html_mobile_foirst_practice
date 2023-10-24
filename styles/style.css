@@ -106,4 +106,38 @@ h1 {
     padding: 0.5em 1em;
     font-size: 18px;
   }
+  .sub-menu {
+    /* display: none; */
+    top: -500px;
+    background-color: white;
+    color: #222;
+    /* padding: 10px; */
+    position: absolute;
+    min-width: 120px;
+    /* top: calc(100% + 25px); */
+    transition: top 0.3s;
+  }
+  .sub-link {
+    padding: 0.4em 0.8em;
+    display: block;
+    border-bottom: 1px solid gray;
+  }
+  .has-children:hover + .sub-menu {
+    display: block;
+    top: calc(100% + 25px);
+  }
+  .has-children:hover::before {
+    transform: rotate(180deg);
+  }
+  .has-children::before {
+    content: "\f078";
+    font-family: FontAwesome;
+    font-size: 14px;
+    margin-right: 14px;
+    display: inline-block;
+    transition: transform 0.4s;
+  }
+  .nav-list > li {
+    position: relative;
+  }
 }
