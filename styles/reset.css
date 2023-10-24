@@ -28,3 +28,7 @@ img {
   padding-left: 15px;
   padding-right: 15px;
 }
+.unlisted {
+  list-style: none;
+  padding-left: 0;
+}
