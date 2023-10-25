@@ -38,6 +38,14 @@ body {
   /* kol developinam */
   margin-bottom: 600px;
 }
+.title--section {
+  font-size: 22px;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  text-align: center;
+  border-bottom: 1px solid white;
+}
+/* header */
 header {
   /* background-color: gray; */
   color: white;
@@ -126,6 +134,41 @@ h1 {
 .blog__image {
   width: 100%;
 }
+/* cards====================== */
+.cards-section {
+  background-color: #505393;
+  color: white;
+  padding: 44px;
+}
+.sub-title {
+  text-align: center;
+  margin-bottom: 56px;
+}
+.cards-list {
+  display: flex;
+}
+.cards-list .card {
+  width: 240px;
+  flex-shrink: 0;
+  display: grid;
+  text-align: center;
+  border: 1px solid #000;
+  padding: 20px;
+}
+.card__icon {
+  font-size: 26px;
+  color: #00ffcc;
+  margin-bottom: 1em;
+}
+.card__title {
+  margin-bottom: 0.5em;
+}
+.window {
+  /* background-color: rgba(255, 255, 255, 0.342); */
+  /* border: 3px dashed tomato; */
+  overflow: auto;
+}
+/* cards====================== */
 /* MEDIAS__________________ */
 @media screen and (min-width: 768px) {
   .main-nav,
@@ -205,5 +248,15 @@ h1 {
   }
   .blog .content {
     text-align: left;
+  }
+  /* cards */
+  .card {
+    display: grid;
+    grid-template-columns: 50px auto;
+    width: 300px;
+    text-align: left;
+  }
+  .card__icon {
+    grid-row: span 2;
   }
 }
